@@ -1,5 +1,7 @@
 <x-layout_base>
+<!-- Tela no Marketshop -->
 
+<!-- Fotos do menu varias opções -->
 <x-menu></x-menu>
 <div class="carousel w-full">
   <div id="slide1" class="carousel-item relative w-full">
@@ -31,7 +33,7 @@
     </div>
   </div>
 </div>
-
+<!-- Final das fotos do menu -->
 
 <div class="bg-white rounded-md shadow-md m-6 p-6">
 <div class="font-bold text-lg">
@@ -53,5 +55,55 @@
   </div>
 @endfor
 </div>   
+
+<!-- Menu de Tela -->
+
+<footer class="footer grid-rows-2 p-10 bg-neutral text-neutral-content">
+  <nav>
+    <h6 class="footer-title">Sobre o</h6> 
+    <a class="link link-hover">Marketshop</a>
+    <a class="link link-hover">Investidores</a>
+    <a class="link link-hover">Tendências</a>
+    <a class="link link-hover">Blog</a>
+  </nav> 
+  <nav>
+    <h6 class="footer-title">Outros Sites</h6> 
+    <a class="link link-hover">Desenvolvidores</a>
+    <a class="link link-hover">Nosso Site Marketshop</a>
+    <a class="link link-hover">Envios</a>
+    <a class="link link-hover">Lojas</a>
+  </nav> 
+  <nav>
+    <h6 class="footer-title">Contato</h6> 
+    <a class="link link-hover">Comprar</a>
+    <a class="link link-hover">Vender</a>
+    <a class="link link-hover">Solução de Problemas</a>
+    <a class="link link-hover">Segurança</a>
+  </nav> 
+  <nav>
+    <h6 class="footer-title">Social</h6> 
+    <a class="link link-hover">Twitter</a>
+    <a class="link link-hover">Instagram</a>
+    <a class="link link-hover">Facebook</a>
+    <a class="link link-hover">Github</a>
+  </nav> 
+  <nav>
+    <h6 class="footer-title">Minha Conta</h6> 
+    <a class="link link-hover">Entre</a>
+    <a class="link link-hover">Administrador</a>
+    <a class="link link-hover">Vendedor</a>
+    <a class="link link-hover">Transportadoras</a>
+  </nav> 
+  <nav>
+    <h6 class="footer-title">Apps</h6> 
+    <a class="link link-hover">Mac</a>
+    <a class="link link-hover">Windows</a>
+    <a class="link link-hover">iPhone</a>
+    <a class="link link-hover">Android</a>
+  </nav>
+</footer>
+
+<!-- Final do menu de tela -->
+
 
 </x-layout_base>
