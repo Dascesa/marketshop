@@ -41,24 +41,27 @@
 </div>
 
 <div class="grid grid-cols-4 gap-5">
-<!-- for variavel = inicio até onde até onde; -->
-@for ($i = 0; $i < 76; $i++)
-  <div class="card bg-base-100 shadow-xl">
-  <figure><img src="https://picsum.photos/400?random={{$i}}" alt="Shoes" /></figure>
+    @foreach($listaProdutos as $produto)
+    <div class="card bg-base-100 shadow-xl">
+  <figure><img class="aspect-square w-full object-cover" src="{{$produto->foto}}" alt="Shoes" /></figure>
     <div class="card-body">
-    <h2 class="card-title">{{fake()->company()}}</h2>
-    <p>{{fake()->realText(100, 1)}}</p>
+    <h2 class="card-title">{{$produto->nome}}</h2>
+    <p>{{$produto->descricao}}</p>
       <div class="card-actions justify-end">
-      <button class="btn btn-primary">Comprar</button>
+         <button class="btn btn-primary"><div>R${{$produto->preco}}</div></button>
+         
      </div>
    </div>
   </div>
-@endfor
-</div>   
+  
+    @endforeach
 
+<!-- for variavel = inicio até onde até onde; -->
+  
 <!-- Menu de Tela -->
 
-<footer class="footer grid-rows-2 p-10 bg-neutral text-neutral-content">
+<div class= "items-center flex max-w-md m-auto footer grid-rows-2 p-10 bg-neutral text-neutral-content">
+<footer class="w-full flex p-10 bg-neutral text-neutral-content items-center">
   <nav>
     <h6 class="footer-title">Sobre o</h6> 
     <a class="link link-hover">Marketshop</a>
@@ -66,6 +69,7 @@
     <a class="link link-hover">Tendências</a>
     <a class="link link-hover">Blog</a>
   </nav> 
+
   <nav>
     <h6 class="footer-title">Outros Sites</h6> 
     <a class="link link-hover">Desenvolvidores</a>
@@ -73,6 +77,7 @@
     <a class="link link-hover">Envios</a>
     <a class="link link-hover">Lojas</a>
   </nav> 
+
   <nav>
     <h6 class="footer-title">Contato</h6> 
     <a class="link link-hover">Comprar</a>
@@ -80,6 +85,7 @@
     <a class="link link-hover">Solução de Problemas</a>
     <a class="link link-hover">Segurança</a>
   </nav> 
+
   <nav>
     <h6 class="footer-title">Social</h6> 
     <a class="link link-hover">Twitter</a>
@@ -87,6 +93,7 @@
     <a class="link link-hover">Facebook</a>
     <a class="link link-hover">Github</a>
   </nav> 
+
   <nav>
     <h6 class="footer-title">Minha Conta</h6> 
     <a class="link link-hover">Entre</a>
@@ -94,6 +101,7 @@
     <a class="link link-hover">Vendedor</a>
     <a class="link link-hover">Transportadoras</a>
   </nav> 
+
   <nav>
     <h6 class="footer-title">Apps</h6> 
     <a class="link link-hover">Mac</a>
@@ -102,8 +110,8 @@
     <a class="link link-hover">Android</a>
   </nav>
 </footer>
+</div>
 
 <!-- Final do menu de tela -->
-
 
 </x-layout_base>

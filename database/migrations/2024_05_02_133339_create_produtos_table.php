@@ -16,7 +16,8 @@ return new class extends Migration
             $table->id();
             $table->string("nome");
             $table->string("descricao");
-            $table->float("preco");
+            $table->string("preco");
+            $table>string("foto");
             $table->foreignIdFor(User::class);
             $table->timestamps();
         });
