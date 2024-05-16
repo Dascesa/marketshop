@@ -20,7 +20,7 @@ class produtoSeeder extends Seeder
                 [
           'nome'=> 'Perfume Arabe Ghala Al wataniah Eau de parfum - 100ml',
             'descricao'=> 'Perfume Cheirosinho',
-                'preco'=> 215,
+                'preco'=> 300,
                     'foto'=> 'https://img.freepik.com/fotos-gratis/um-frasco-de-perfume-com-a-palavra-perfume_1340-37484.jpg',
                         'user_id' => 1,
                 ],  
