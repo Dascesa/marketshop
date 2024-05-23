@@ -45,10 +45,10 @@ class produtoSeeder extends Seeder
 
                                 //   Produto 4
                                 [
-                                    'nome'=> 'Perfume Arabe Ghala Al wataniah Eau de parfum - 100ml',
-                                      'descricao'=> 'Perfume Intenso',
-                                          'preco'=> 215,
-                                              'foto'=> 'https://cdn.awsli.com.br/600x450/1851/1851672/produto/228231581/duha-4pdjne9l2c.jpg',
+                                    'nome'=> 'Perfume Imperial Majesty de Clive Christian 500ml',
+                                      'descricao'=> 'O perfume mais caro do mundo',
+                                          'preco'=> 215000000,
+                                              'foto'=> 'https://oespecialista.com.br/wp-content/uploads/2021/08/perfume-mais-caro-do-mundo-clive-christian.jpg',
                                                   'user_id' => 1,
                                           ], 
 

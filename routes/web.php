@@ -33,3 +33,6 @@ function(Request $request) {
     dd("Usuário Salvo com Sucesso 😊👍");
 
 })->name('salva-usuario');
+
+// PRODUTOS
+Route::view('/cadastra-produto', 'cadastra-produto');

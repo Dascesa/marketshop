@@ -48,7 +48,7 @@
     <h2 class="card-title">{{$produto->nome}}</h2>
     <p>{{$produto->descricao}}</p>
       <div class="card-actions justify-end">
-         <button class="btn btn-primary"><div>R${{$produto->preco}}</div></button>
+         <button class="btn btn-primary"> <div>R${{((number_format($produto->preco, 2, ',' , '.')))}}</div></button>
          
      </div>
    </div>
