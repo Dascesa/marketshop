@@ -27,10 +27,10 @@ class produtoSeeder extends Seeder
 
                 // Produto 2
                 [
-                    'nome'=> 'Perfume 2',
-                      'descricao'=> 'Perfume Suave',
-                          'preco'=> 200,
-                              'foto'=> 'https://m.media-amazon.com/images/I/61XudjcLXuL._AC_UF350,350_QL80_DpWeblab_.jpg',
+                    'nome'=> 'Perfume Feminino Pure XS For Her Paco Rabanne Eau de Parfum 50ml',
+                      'descricao'=> 'Perfume feminino floral. Pure XS for Her é provocante e selvagem, uma verdadeira explosão de sentidos que levam ao ápice do êxtase.',
+                          'preco'=> 565,00,
+                              'foto'=> 'https://cdn.sistemawbuy.com.br/arquivos/feb5eb39b3a2004abcc3bcd79041ba64/produtos/6503a46937cc7/20230914212513-6503a4696b118.jpg',
                                   'user_id' => 1,
                           ],  
 

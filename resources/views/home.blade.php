@@ -43,7 +43,11 @@
 <div class="grid grid-cols-4 gap-5">
     @foreach($listaProdutos as $produto)
     <div class="card bg-base-100 shadow-xl">
-  <figure><img class="aspect-square w-full object-cover" src="{{$produto->foto}}" alt="Shoes" /></figure>
+  <figure><img class="aspect-square w-full object-cover" src="{{
+    strpos($produto->foto, 'produtos') ===0 ?
+      asset('fotos/'.$produto->foto) : $produto->foto}}" alt="Shoes" />
+    </figure>
+
     <div class="card-body">
     <h2 class="card-title">{{$produto->nome}}</h2>
     <p>{{$produto->descricao}}</p>
@@ -55,12 +59,14 @@
   </div>
   
     @endforeach
-
+  </div>
+  </div>
 <!-- for variavel = inicio até onde até onde; -->
   
 <!-- Menu de Tela -->
+<!-- Final do menu de tela -->
 
-<div class= "items-center flex max-w-md m-auto footer grid-rows-2 p-10 bg-neutral text-neutral-content">
+
 <footer class="w-full flex p-10 bg-neutral text-neutral-content items-center">
   <nav>
     <h6 class="footer-title">Sobre o</h6> 
@@ -110,8 +116,5 @@
     <a class="link link-hover">Android</a>
   </nav>
 </footer>
-</div>
-
-<!-- Final do menu de tela -->
 
 </x-layout_base>

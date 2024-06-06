@@ -29,6 +29,11 @@ return [
     */
 
     'disks' => [
+            'fotos' => [
+                'driver' => 'local',
+                    'root' => public_path() . '/fotos',
+            ],
+        
 
         'local' => [
             'driver' => 'local',
