@@ -16,43 +16,39 @@ class produtoSeeder extends Seeder
     {
         DB::table('produtos')->insert( 
             [
+
                 // Produto 1
                 [
-          'nome'=> 'Perfume Arabe Ghala Al wataniah Eau de parfum - 100ml',
-            'descricao'=> 'Perfume Cheirosinho',
-                'preco'=> 300,
-                    'foto'=> 'https://img.freepik.com/fotos-gratis/um-frasco-de-perfume-com-a-palavra-perfume_1340-37484.jpg',
+          'nome'=> 'Perfume Pure Xs For Her Eau de Parfum Feminino (80Ml)',
+            'descricao'=> 'Gênero: Feminino
+            Concentração: Eau de Parfum
+            Família Olfativa: Floral Oriental
+            Notas de Cabeça: Ylang-Ylang
+            Notas no Meio: Pipoca
+            Notas de Fundo: Baunilha',
+                'preco'=> 699,
+                    'foto'=> 'https://d2rtj7su3taf1w.cloudfront.net/Custom/Content/Products/25/34/2534_pure-xs-for-her-eau-de-parfum-perfume-feminino_m1_637642073921204687.jpg',
                         'user_id' => 1,
                 ],  
 
                 // Produto 2
                 [
-                    'nome'=> 'Perfume Feminino Pure XS For Her Paco Rabanne Eau de Parfum 50ml',
-                      'descricao'=> 'Perfume feminino floral. Pure XS for Her é provocante e selvagem, uma verdadeira explosão de sentidos que levam ao ápice do êxtase.',
-                          'preco'=> 565,00,
-                              'foto'=> 'https://cdn.sistemawbuy.com.br/arquivos/feb5eb39b3a2004abcc3bcd79041ba64/produtos/6503a46937cc7/20230914212513-6503a4696b118.jpg',
+                    'nome'=> 'Shakira - Dance Midnight Muse (80Ml)',
+                      'descricao'=> 'Gênero: Feminino',
+                          'preco'=> 199,
+                              'foto'=> 'https://s3.amazonaws.com/satelital-resources/products/115996_1_a10d0200-2c97-49cd-9b47-5a82cd867f79_Big.jpg',
                                   'user_id' => 1,
                           ],  
-
-                        //   Produto 3
-                        [
-                            'nome'=> 'Perfume Arabe Duha Al wataniah Eau de parfum - 100ml - feminino',
-                              'descricao'=> 'Perfume Intenso',
-                                  'preco'=> 215,
-                                      'foto'=> 'https://cdn.awsli.com.br/600x450/1851/1851672/produto/228231581/duha-4pdjne9l2c.jpg',
-                                          'user_id' => 1,
-                                  ], 
-
-                                //   Produto 4
-                                [
-                                    'nome'=> 'Perfume Imperial Majesty de Clive Christian 500ml',
-                                      'descricao'=> 'O perfume mais caro do mundo',
-                                          'preco'=> 215000000,
-                                              'foto'=> 'https://oespecialista.com.br/wp-content/uploads/2021/08/perfume-mais-caro-do-mundo-clive-christian.jpg',
-                                                  'user_id' => 1,
-                                          ], 
-
-                                        //   Produto 5
+                      
+                            // Produto 3
+                [
+                    'nome'=> 'Shakira - Dance Midnight Muse (80Ml)',
+                      'descricao'=> 'Gênero: Feminino',
+                          'preco'=> 199,
+                              'foto'=> 'https://d2rtj7su3taf1w.cloudfront.net/Custom/Content/Products/25/34/2534_pure-xs-for-her-eau-de-parfum-perfume-feminino_m1_637642073921204687.jpg',
+                                  'user_id' => 1,
+                          ],  
+            
 
             ]);
     }

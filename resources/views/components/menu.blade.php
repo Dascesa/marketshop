@@ -8,6 +8,7 @@
     <div class="form-control">
       <input type="text" placeholder="Pesquisar" class="input input-bordered w-24 md:w-auto" />
     </div>
+      @auth
     <div class="dropdown dropdown-end">
       <div tabindex="0" role="button" class="btn btn-ghost btn-circle avatar">
         <div class="w-10 rounded-full">
@@ -21,10 +22,15 @@
             <span class="badge">Novo</span>
           </a>
         </li>
+           <li><a href="/cadastra-produto"> Cadastrar Produto </a></li>
+           <li><a href="/sair"> Sair </a></li>
         <li><a>Configurações</a></li>
         <li><a>Sair</a></li>
       </ul>
     </div>
+        @else
+        <a href="/login">Entrar</a>
+        @endauth
   </div>
 </div>
 <!-- Segundo Menu -->
